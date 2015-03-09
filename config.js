@@ -17,8 +17,8 @@ config = {
           options: {
               service: 'Mandrill',
               auth: {
-                  user: process.env.MANDRILL_USERNAME,
-                  pass: process.env.MANDRILL_APIKEY
+                  user: process.env.app34713597@heroku.com,
+                  pass: process.env.1lw04qhxFCi6N9a4dp7WsQ
                 }
               }
         },
