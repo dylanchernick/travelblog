@@ -11,7 +11,7 @@ config = {
     // Configure your URL and mail settings here
     // ### Production
     production: {
-      url: 'http://my-blog.com',
+      url: 'http://dylanchernick.com',
       mail: {
         transport: 'SMTP',
         host: 'smtp.mandrillapp.com',
@@ -24,8 +24,10 @@ config = {
         }
       },
       database: {
-        client: 'postgres',
-        connection: process.env.DATABASE_URL,
+        client: 'sqlite3',
+        connection: {
+	  filename: path.join(__dirname, '/content/data/ghost.db')
+	},
         debug: false
       },
       server: {
